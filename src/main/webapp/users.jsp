@@ -6,19 +6,13 @@
 </head>
 <body>
 <h3><a href="index.html">Home</a></h3>
-    <hr>
-    <h2>Users</h2>
-    <form action=meals method="post">
-        <p>
-            <select size="10">
-                <c:forEach var="usr" items="${users}">
-                    <option value="${usr}">${usr}</option>
-                </c:forEach>
-            </select>
-        </p>
-        <p>
-            <input type="submit" value="go">
-        </p>
+<hr>
+<h2>Users</h2>
+<p>
+    <form action="users" method="post">
+        <button type="submit" name="userId" value="1">Admin</button>
+        <button type="submit" name="userId" value="2">User</button>
     </form>
+</p>
 </body>
 </html>
